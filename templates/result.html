@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Sentiment Analysis Result</h1>
+    <div class="result">
+        <p>Sentence: {{ sentence }}</p>
+        <p>Sentiment: {% if sentiment == 1 %}Positive{% else %}Negative{% endif %}</p>
+    </div>
+</body>
+</html>
